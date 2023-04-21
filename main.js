@@ -2,7 +2,7 @@
 // @name                Ximalaya-UIModify
 // @name:zh-CN          Ximalaya-综合界面优化
 // @namespace           https://github.com/TitanRGB
-// @version             1.0
+// @version             1.1
 // @description         Self-use UI modify for Ximalaya.
 // @description:zh-CN   自用喜马拉雅界面美化。
 // @author              https://github.com/TitanRGB
@@ -55,12 +55,20 @@ let main = function () {
         }
     }
     // 移除 ad3: 下载客户端右边栏置顶
-    let ad3 = document.querySelector('#award > main > div.sound-detail > div.clearfix > div.side.layout-side > div:nth-child(1)');
-    if (ad3) {
+    let ad3A = document.querySelector('#award > main > div.sound-detail > div.clearfix > div.side.layout-side > div:nth-child(1)');
+    if (ad3A) {
         let targetText = '立即下载';
         let targetDiv = document.querySelector('#award > main > div.sound-detail > div.clearfix > div.side.layout-side > div:nth-child(1) > div > a > span.text._ib');
         if (targetDiv && targetDiv.textContent === targetText) {
-            ad3.remove();
+            ad3A.remove();
+        }
+    }
+    let ad3B = document.querySelector('#award > main > div.album-detail > div.clearfix > div.side.layout-side > div.mgb-20 > div.container.Kl_');
+    if (ad3B) {
+        let targetText = '立即下载';
+        let targetDiv = document.querySelector('#award > main > div.album-detail > div.clearfix > div.side.layout-side > div.mgb-20 > div.container.Kl_ > a > span.text._ib');
+        if (targetDiv && targetDiv.textContent === targetText) {
+            ad3B.remove();
         }
     }
     // 移除“评论区”
