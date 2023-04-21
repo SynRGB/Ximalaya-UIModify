@@ -11,8 +11,8 @@
 
 自用喜马拉雅网站界面美化。
 
-| <h3>Before</h3>                                                                         | <h3>After</h3>                                                                         |
-|-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| <img src="https://github.com/SynRGB/Ximalaya-UIModify/raw/main/%23README/before1.png"/> | <img src="https://github.com/SynRGB/Ximalaya-UIModify/raw/main/%23README/after1.png"/> |
-| <img src="https://github.com/SynRGB/Ximalaya-UIModify/raw/main/%23README/before2.png"/> | <img src="https://github.com/SynRGB/Ximalaya-UIModify/raw/main/%23README/after2.png"/> |
-| <img src="https://github.com/SynRGB/Ximalaya-UIModify/raw/main/%23README/before3.jpg"/> | <img src="https://github.com/SynRGB/Ximalaya-UIModify/raw/main/%23README/after3.jpg"/> |
+| <h3>Before</h3>                                                                                     | <h3>After</h3>                                                                              |
+|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| <img src="https://github.com/SynRGB/Ximalaya-UIModify/raw/main/%23README/before1.png"/>             | <img src="https://github.com/SynRGB/Ximalaya-UIModify/raw/main/%23README/after1.png"/>      |
+| <img src="https://github.com/SynRGB/Ximalaya-UIModify/raw/main/%23README/before2.png"/>             | <img src="https://github.com/SynRGB/Ximalaya-UIModify/raw/main/%23README/after2.png"/>      |
+| <img src="https://github.com/SynRGB/Ximalaya-UIModify/raw/main/%23README/before3.jpg"/> | <img src="https://github.com/SynRGB/Ximalaya-UIModify/raw/main/%23README/after3.jpg"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> |
