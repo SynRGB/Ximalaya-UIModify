@@ -11,6 +11,21 @@
 
 自用喜马拉雅网站界面美化。
 
+**弹窗拦截：**
+
+<table>
+<tr>
+    <td>
+        <img src="https://github.com/SynRGB/Ximalaya-UIModify/raw/main/%23README/ad1.png"/>
+    </td>
+    <td>
+        <img src="https://github.com/SynRGB/Ximalaya-UIModify/raw/main/%23README/ad4.png"/>
+    </td>
+</tr>
+</table>
+
+**图形优化：**
+
 | **原版**                                                     | **改版**                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | <img src="https://github.com/SynRGB/Ximalaya-UIModify/raw/main/%23README/before1.png"/> | <img src="https://github.com/SynRGB/Ximalaya-UIModify/raw/main/%23README/after1.png"/> |
