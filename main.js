@@ -2,7 +2,7 @@
 // @name                Ximalaya-UIModify
 // @name:zh-CN          Ximalaya-综合界面优化
 // @namespace           https://github.com/TitanRGB
-// @version             1.1
+// @version             1.2
 // @description         Self-use UI modify for Ximalaya.
 // @description:zh-CN   自用喜马拉雅界面美化。
 // @author              https://github.com/TitanRGB
@@ -30,9 +30,16 @@ let main = function () {
         ad0B.remove();
     }
     // 移除 ad1: 下载客户端领VIP弹窗
-    let ad1 = document.querySelector('body > div:nth-child(16) > div > div.xui-modal-wrap.zj_ > div');
-    if (ad1) {
+    let ad1A = document.querySelector('body > div:nth-child(16) > div > div.xui-modal-wrap.zj_ > div');
+    if (ad1A) {
         let click = document.querySelector('body > div:nth-child(16) > div > div.xui-modal-wrap.zj_ > div > div > span');
+        if (click) {
+            click.click();
+        }
+    }
+    let ad1B = document.querySelector('body > div:nth-child(17) > div > div.xui-modal-wrap.zj_ > div');
+    if (ad1B) {
+        let click = document.querySelector('body > div:nth-child(17) > div > div.xui-modal-wrap.zj_ > div > div > span');
         if (click) {
             click.click();
         }
@@ -69,6 +76,14 @@ let main = function () {
         let targetDiv = document.querySelector('#award > main > div.album-detail > div.clearfix > div.side.layout-side > div.mgb-20 > div.container.Kl_ > a > span.text._ib');
         if (targetDiv && targetDiv.textContent === targetText) {
             ad3B.remove();
+        }
+    }
+    // 移除 ad4: 检测到海外IP，下载国际版客户端
+    let ad4 = document.querySelector('#award > div.himalaya-wrapper._ur');
+    if (ad4) {
+        let click = document.querySelector('#award > div.himalaya-wrapper._ur > i');
+        if (click) {
+            click.click();
         }
     }
     // 移除“评论区”
