@@ -2,7 +2,7 @@
 // @name                Ximalaya-UIModify
 // @name:zh-CN          Ximalaya-综合界面优化
 // @namespace           https://github.com/TitanRGB
-// @version             1.2
+// @version             1.3
 // @description         Self-use UI modify for Ximalaya.
 // @description:zh-CN   自用喜马拉雅界面美化。
 // @author              https://github.com/TitanRGB
@@ -21,13 +21,16 @@ let last_run_time = new Date().getTime();
 
 let main = function () {
     // 移除 ad0: 主页顶部滚动推荐
-    let ad0A = document.querySelector('#award > div.party-building._VZ');
-    if (ad0A) {
-        ad0A.remove();
-    }
-    let ad0B = document.querySelector('#award > main > div:nth-child(1) > div.banner-wrapper.cZ_');
-    if (ad0B) {
-        ad0B.remove();
+    let zhu_ye = document.querySelector('#award > main > div:nth-child(1) > div.category-wrap.E_h > div');
+    if (zhu_ye) {
+        let ad0A = document.querySelector('#award > div.party-building._VZ');
+        if (ad0A) {
+            ad0A.remove();
+        }
+        let ad0B = document.querySelector('#award > main > div:nth-child(1) > div.banner-wrapper.cZ_');
+        if (ad0B) {
+            ad0B.remove();
+        }
     }
     // 移除 ad1: 下载客户端领VIP弹窗
     let ad1A = document.querySelector('body > div:nth-child(16) > div > div.xui-modal-wrap.zj_ > div');
