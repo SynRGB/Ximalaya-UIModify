@@ -2,7 +2,7 @@
 // @name                Ximalaya-UIModify
 // @name:zh-CN          Ximalaya-综合界面优化
 // @namespace           https://github.com/TitanRGB
-// @version             1.3
+// @version             2.0
 // @description         Self-use UI modify for Ximalaya.
 // @description:zh-CN   自用喜马拉雅界面美化。
 // @author              https://github.com/TitanRGB
@@ -16,8 +16,6 @@
 // @contributionURL     https://github.com/SynRGB/Ximalaya-UIModify
 // @copyright           Copyright © 2022-PRESENT, TitanRGB (https://github.com/TitanRGB)
 // ==/UserScript==
-
-let last_run_time = new Date().getTime();
 
 let main = function () {
     // 移除 ad0: 主页顶部滚动推荐
@@ -115,19 +113,27 @@ let main = function () {
     }
 }
 
-let MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+let active = false;
+let timer = null;
+let halfSecondInterval = 500; // half second
+let oneMinuteInterval = 60 * 1000; // one minute
 
-let observer = new MutationObserver(function (mutations) {
-    mutations.forEach(function () {
-        if (new Date().getTime() - last_run_time > 100) {
-            main();
-        }
-    });
-});
+function setActive() {
+    active = true;
+    if (!timer) {
+        timer = setInterval(function () {
+            if (active) {
+                main();
+            }
+        }, halfSecondInterval);
+        setTimeout(function () {
+            active = false;
+        }, oneMinuteInterval);
+    }
+}
 
-observer.observe(document.body, {
-    childList: true,
-    subtree: true
-});
+document.addEventListener('DOMContentLoaded', setActive, false);
+document.addEventListener('scroll', setActive, false);
+document.addEventListener('click', setActive, false);
 
 console.log("JS script Ximalaya-UIModify (Ximalaya-综合界面优化) loaded. See more details at https://github.com/SynRGB/Ximalaya-UIModify");
