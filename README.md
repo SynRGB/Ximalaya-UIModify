@@ -1,3 +1,6 @@
+> [!WARNING]
+> 因为维护麻烦而且原版网站能忍，自 `2023 年 5 月 26 日` (`v2.0`) 起归档，不再维护。 请注意，该网站可能会更新并且可能存在兼容性问题。
+
 <div align="center">
     <img src="https://github.com/SynRGB/Ximalaya-UIModify/raw/main/%23README/icon/256.png" width="20%"/>
     <h1>Ximalaya-综合界面优化 <code>v2.0</code></h1>
